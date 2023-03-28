@@ -15,36 +15,60 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Spacer,
+  Heading,
 } from '@chakra-ui/react';
+import Home from './Home';
+import About from './About';
+// import styles from "../App.css"
+import {Link as RCTLINK} from "react-scroll"
+import { FaMoon,FaSun } from 'react-icons/fa';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 // import { useColorMode } from '@chakra-ui/react/dist';
 import { useColorMode } from "@chakra-ui/color-mode";
-const Links = ['Dashboard', 'Projects', 'Team'];
+import image from "./images/logo.jpg"
+// import Home from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
+import styles from "../components/Navbar.module.css"
+// console.log(styles)
+// 
+const Links = [{ id:"home",a:"Home",class:"nav-link home"},{id:"about",a:'About',class:"nav-link about"},
+{id:"skills",a:"Skills",class:"nav-link skills"},{id:"projects",a:'Projects',class:"nav-link projects"},
+ {id:"contact",a:'Contact',class:"nav-link contact"}];
 
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
+// const NavLink = ({ children }) => (
+//   <Link
+//     px={2}
+//     py={1}
+//     rounded={'md'}
+//     _hover={{
+//       textDecoration: 'none',
+//       bg: useColorModeValue('gray.200', 'gray.700'),
+//     }}
+//   >
+//     {children}
+//   </Link>
+
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
+  // console.log(isOpen)
 
   return (
     <>
-      <Box onClick={toggleColorMode} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-        <Flex alignItems={'center'}>
+    {/* <div style={{position:"sticky",top:"2px"}}> */}
+      <Box color={isDark?"white":"black"}
+       position={"sticky"} top="0.1px" id="nav-menu"
+    
+      width={"100%"}
+       bg={useColorModeValue('#77bbad',"#557A95" )}
+        >
+        <Flex width="100%" h={16} alignItems={'center'}   justifyContent={'space-between'}>
+        <Flex width="10%"  alignItems={'center'}>
             <Menu>
               <MenuButton
                 as={Button}
@@ -52,54 +76,59 @@ export default function Navbar() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
+                  <Flex>
                 <Avatar
                   size={'sm'}
                   src={
-                    'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
+                   image
                   }
+           
                 />
+                {/* <Spacer/> */}
+                <Box display={{base:"none",md:"inline",lg:"inline",xl:"inline","2xl":"inline"}} ml="10px" mt="5px"><Heading as={"h6"} color="teal.300" display={"inline"}  fontSize={{sm:"5px",md:"10px",xl:"15px",lg:"15px",xl:"20px"}}>{"<S"}</Heading>
+             <Heading as={"h6"} display={"inline"} fontSize={{sm:"5px",md:"10px",xl:"15px",lg:"15px",xl:"20px"}} color="#bd651e">{"O"}</Heading>
+             <Heading as={"h6"} display={"inline"} fontSize={{sm:"5px",md:"10px",xl:"15px",lg:"15px",xl:"20px"}} color="#D79922">{"N"}</Heading>
+             <Heading as={"h6"} display={"inline"} fontSize={{sm:"5px",md:"10px",xl:"15px",lg:"15px",xl:"20px"}} color="#3FEEE6">{"U>"}</Heading>
+               {/* <Heading style={{color:"#D79922",fontSize:"20px"}}>{"N"}</Heading><Heading style={{color:"#3FEEE6",fontSize:"20px"}}>{"U/>"}</Heading> */}
+                </Box></Flex>
               </MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
+          
             </Menu>
           </Flex>
-          <IconButton
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={'Open Menu'}
-            display={{ md: 'none' }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack spacing={8} alignItems={'center'}>
-            <Box color="color: rgb(52, 52, 52);">Hii..</Box>
+      
+          <IconButton size={"5px"}  display={{base:"inline",md:"inline",lg:"inline",xl:"inline","2xl":"inline"}} ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
             <HStack
+            justifyContent={"space-around"}
+            className={styles.add}
+// width={{sm:"85%",md:"25%",lg:"45%",xl:"35%"}}
+          
+            // marginRight= "400px"
               as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
+              spacing={2}
+              display="flex">
+                  
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <RCTLINK   activeClass="active"
+  
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} to={link.id}  className={link.class}  hover={{color:"red"}} key={link.a}><Link fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}}_hover={{color:"teal"}}>{link.a}</Link></RCTLINK>
               ))}
+              <Link className='nav-link resume' paddingTop="2px" fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} _hover={{bg:"teal"}} href="https://drive.google.com/file/d/1YiL0dE-iwYx6TZDwH4NK57XBG0L9_RMr/view?usp=share_link">Resume</Link>
             </HStack>
-          </HStack>
+
          
         </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
       </Box>
+      <Home/>
+<About/>
 
-      <Box p={4}>Main Content Here</Box>
+<Skills/>
+<Projects/>
+
+    <Contact/>
     </>
   );
 }
