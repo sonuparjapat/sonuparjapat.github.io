@@ -22,7 +22,7 @@ export default function Home({open}) {
 <Box 
 // border="1px solid red"
 // bg="green"
-height={['65em', '70em', '70em', '37em', '37em', '37em']}
+height={['62em', '70em', '70em', '37em', '37em', '37em']}
     id="home" 
     >
     <Box
@@ -65,6 +65,7 @@ rounded="xl"
 // height={['20.2em', '20.2em', '20.2em', '26.2em', '26.2em', '26.2em']}
 >
 <Image
+className="home-img"
               rounded={'xl'}
               height={['20.2em', '20.2em', '20.2em', '26.2em', '26.2em', '26.2em']}
               // width={['26.2em', '26.2em', '26.2em', '26.2em', '26.2em', '10.0em']}

@@ -61,7 +61,8 @@ export default function Navbar() {
   return (
     <>
     {/* <div style={{position:"sticky",top:"2px"}}> */}
-      <Box color={isDark?"white":"black"}
+      <Box 
+      color={isDark?"white":"black"}
        position={"sticky"} top="0.1px" id="nav-menu"
     
       width={"100%"}
@@ -123,7 +124,7 @@ export default function Navbar() {
 
       </Box>
       <Home/>
-<About/>
+<About open={isDark}/>
 
 <Skills/>
 <Projects/>
