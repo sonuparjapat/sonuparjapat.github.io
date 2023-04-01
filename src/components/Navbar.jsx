@@ -126,10 +126,10 @@ export default function Navbar() {
       <Home/>
 <About open={isDark}/>
 
-<Skills/>
-<Projects/>
+<Skills />
+<Projects open={isDark}/>
 
-    <Contact/>
+    <Contact open={isDark}/>
     </>
   );
 }
