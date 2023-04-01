@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d8b2120.css",
-    "main.js": "/static/js/main.4dbe57c2.js",
+    "main.css": "/static/css/main.4bffabc1.css",
+    "main.js": "/static/js/main.fdc6d983.js",
     "static/media/banner.jpg": "/static/media/banner.2541860e721025109460.jpg",
     "static/media/logo.jpg": "/static/media/logo.4abfa64514f3f350692e.jpg",
     "static/media/hii2.gif": "/static/media/hii2.0efe87f53f1d4357f340.gif",
+    "static/media/shineu.jpg": "/static/media/shineu.566c453192721f94f8ba.jpg",
+    "static/media/happshop.jpg": "/static/media/happshop.0149bb05a814880ec150.jpg",
     "static/media/hiiimg.gif": "/static/media/hiiimg.10047db24eff3d3ed50a.gif",
+    "static/media/foolocker.jpg": "/static/media/foolocker.2940596c65726994cfe6.jpg",
     "static/media/about.gif": "/static/media/about.c47d9404e8421e75b94b.gif",
     "index.html": "/index.html",
-    "main.7d8b2120.css.map": "/static/css/main.7d8b2120.css.map",
-    "main.4dbe57c2.js.map": "/static/js/main.4dbe57c2.js.map"
+    "main.4bffabc1.css.map": "/static/css/main.4bffabc1.css.map",
+    "main.fdc6d983.js.map": "/static/js/main.fdc6d983.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d8b2120.css",
-    "static/js/main.4dbe57c2.js"
+    "static/css/main.4bffabc1.css",
+    "static/js/main.fdc6d983.js"
   ]
 }
