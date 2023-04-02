@@ -1,5 +1,6 @@
 import { Box, Heading,Image } from '@chakra-ui/react'
 import {Link} from "react-router-dom"
+import smart from "./images/smartcart.jpg"
 import {FaInternetExplorer,FaFirefoxBrowser,FaGithub,FaHandPointRight} from "react-icons/fa"
 import { BsBrowserChrome } from "react-icons/bs"
 import React from 'react'
@@ -9,22 +10,30 @@ import img2 from "./images/happshop.jpg"
 import img3 from "./images/shineu.jpg"
 export default function Projects({open}) {
   return (
-   <Box   bg={open?"gray.700":"white"}   id="projects">
+   <Box height={['104em', '52em', '55em', '63em', '32em', '32em']} bg={open?"gray.700":"white"}   id="projects">
    <Box  paddingTop="20px"> <Heading textAlign="center"  as="h6" >PROJECTS</Heading></Box>
-   <Box margin="auto" className={styles.box3}  paddingTop="40px" width="80%" border="1px solid red" >
+   <Box margin="auto" mt="20px"  width="80%"  >
     <Box margin="auto" width="100%"  
-    display="flex" 
+    display="grid" 
+    gap="20px"
+    
+    // height={"500px"}
+gridTemplateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(4,1fr)', 'repeat(4,1fr)']}
     justifyContent="space-around"
     // height={['46em', '37em', '26em', '31em', '31em', '37em']} 
-   height={"500px"} >
-<Box className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} width="40%">
-<Image   transition= "transform 0.3s ease-in-out"  className={styles.box4} src={img1}/>
-<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="md">One Destination (Collaborative Project)</Heading>
-<Box  mt="20px" className={styles.box3} > <Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"} mt="15px" textAlign={"left"} as="h6" size="md">One Destination is a Replica of a website having name footlocker,
+    >
+
+{/* height={['10.9em', '8.8em', '9.5em', '10.6em', '9.3em', '9.3em']} */}
+<Box  id={styles.box5} className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} 
+>
+<Image transition= "transform 0.3s ease-in-out"  className={styles.box4} src={img1}/>
+<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="18px">One Destination </Heading><Box textAlign="center"><span>(Collaborative Project)</span></Box>
+<Box  mt="5px" > <Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"}  textAlign={"center"} as="h6"
+ fontSize={['0.8em', '0.8em', '0.8em', '1em', '1em', '4em']} >One Destination is a Replica of a website having name footlocker,
 The website offers a wide selection of products from top brands such as Nike, Adidas, and Jordan.</Heading></Box>
-<Box margin="auto" width="95%"  gap="20px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  textAlign={"center"} as="h6" size="md">TECH STACK</Heading></Box>
-<Box mt="20px" border="1px solid green"><Heading  className="project-tech-stack" color="green.200" as="h6" size="md">JavaScript,HTML,CSS</Heading></Box></Box>
-<Box  margin="auto" width="95%"  mt="10px"   justifyContent="space-between" display="flex"><Box width="70%"><FaHandPointRight size="25px"/></Box><Box width="20%" justifyContent="space-between" display="flex">
+<Box margin="auto" width="95%"  gap="10px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  textAlign={"center"} as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>TECH STACK</Heading></Box>
+<Box mt="20px" border="1px solid green"><Heading  className="project-tech-stack" color="green.200" as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>JavaScript,HTML,CSS</Heading></Box></Box>
+<Box  margin="auto" width="95%"  mt="10px"   justifyContent="space-between" display="flex"><Box width="50%"><FaHandPointRight size="25px"/></Box><Box width="30%" justifyContent="space-between" display="flex">
 <Box transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}><Link className="project-deployed-link" to="https://gentle-biscochitos-18d259.netlify.app/"><BsBrowserChrome  size="25px" /></Link></Box>
 <Box  transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}>
 <Link className="project-github-link" to="https://github.com/sonuparjapat/Footlocker"><FaGithub size="25px"/></Link>
@@ -36,14 +45,16 @@ The website offers a wide selection of products from top brands such as Nike, Ad
 </Box>
 
 </Box>
-<Box className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} width="40%">
+<Box  id={styles.box5}    className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} >
 <Image   transition= "transform 0.3s ease-in-out"  className={styles.box4} src={img2}/>
-<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="md">Happy Shop (Individual Project)</Heading>
-<Box mt="20px" className={styles.box3} ><Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"} mt="15px" textAlign={"left"} as="h6" fontSize="18px">Happy Shop is a Replica of a website having
-name BestBuy.Best Buy is a leading electronics retailer that offers a wide selection of products and services both in-store and online through its website bestbuy.com</Heading></Box>
-<Box  margin="auto" width="95%"  gap="20px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  textAlign={"center"} as="h6" size="md">TECH STACK</Heading></Box>
-<Box mt="20px" border="1px solid green"><Heading className="project-tech-stack"  color="green.200" as="h6" size="md">JavaScript,HTML,CSS</Heading></Box></Box>
-<Box  margin="auto" width="95%"   mt="10px"   justifyContent="space-between" display="flex"><Box width="70%"><FaHandPointRight size="25px"/></Box><Box width="20%" justifyContent="space-between" display="flex">
+<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="18px">Happy Shop </Heading><Box textAlign="center"><span>(Individual Project)</span></Box>
+<Box  mt="5px"  ><Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"}
+ textAlign={"center"} as="h6"
+ fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>Happy Shop is a Replica of a website having
+name BestBuy.The Website offers a wide selection of products and services both in-store and online through its website bestbuy.com</Heading></Box>
+<Box  margin="auto" width="95%"  gap="20px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  textAlign={"center"} as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>TECH STACK</Heading></Box>
+<Box mt="20px" border="1px solid green"><Heading className="project-tech-stack"  color="green.200" as="h6" mt="6px" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>JavaScript,HTML,CSS</Heading></Box></Box>
+<Box  margin="auto" width="95%"   mt="10px"   justifyContent="space-between" display="flex"><Box width="70%"><FaHandPointRight size="25px"/></Box><Box width="30%" justifyContent="space-between" display="flex">
 <Box transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}><Link className="project-deployed-link" to="https://inspiring-meerkat-54075d.netlify.app/english.html"><BsBrowserChrome  size="25px" /></Link></Box>
 <Box  transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}>
 <Link className="project-github-link" to="https://github.com/sonuparjapat/nostalgic-shock-8728"><FaGithub size="25px"/></Link>
@@ -55,13 +66,56 @@ name BestBuy.Best Buy is a leading electronics retailer that offers a wide selec
 </Box>
 
 </Box>
+<Box  id={styles.box5}   className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} >
+<Image   transition= "transform 0.3s ease-in-out"  className={styles.box4} src={smart}/>
+<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="18px">Smart Cart </Heading><Box textAlign="center"><span>(Collaborative Project)</span></Box>
+<Box  mt="5px"  ><Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"}
+ textAlign={"center"} as="h6"
+ fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>SmartCart is a Replica of a website having
+name ebay.com.It's a online marketplace that allows individuals and businesses to buy and sell a wide variety of goods and services.</Heading></Box>
+<Box  margin="auto" width="95%"  gap="20px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  mt="7px" textAlign={"center"} as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>TECH STACK</Heading></Box>
+<Box mt="20px" border="1px solid green"><Heading className="project-tech-stack"  color="green.200" as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>React,ChakraUI<br></br>JavaScript,HTML,CSS</Heading></Box></Box>
+<Box  margin="auto" width="95%"   mt="10px"   justifyContent="space-between" display="flex"><Box width="70%"><FaHandPointRight size="25px"/></Box><Box width="30%" justifyContent="space-between" display="flex">
+<Box transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}><Link className="project-deployed-link" to="https://mysmart-cart.netlify.app/"><BsBrowserChrome  size="25px" /></Link></Box>
+<Box  transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}>
+<Link className="project-github-link" to="https://github.com/sonuparjapat/nostalgic-shock-8728"><FaGithub size="25px"/></Link>
+</Box>
+</Box>
+
+</Box>
+
+</Box>
+
+</Box>
+<Box  id={styles.box5}   className="project-card" transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.04)"}} >
+<Image   transition= "transform 0.3s ease-in-out"  className={styles.box4} src={img3}/>
+<Heading className="project-title" mt="15px" textAlign={"center"} as="h6" size="18px">ShineU </Heading><Box textAlign="center"><span>(Individual Project)</span></Box>
+<Box  mt="5px" ><Box margin="auto" width="95%" pt="1px" ><Heading className="project-description" fontWeight={"light"}
+ textAlign={"center"} as="h6"
+ fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>ShineU is a Replica of a website having
+name Purple.com.It's a beauty and cosmatics website that provides the products which are related to the beauty and makeup.</Heading></Box>
+<Box  margin="auto" width="95%"  gap="20px"  justifyContent={"space-between"} display={"flex"}><Box border="1px solid red" mt="20px"><Heading color="red.200"  textAlign={"center"} as="h6"  mt="7px"   fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>TECH STACK</Heading></Box>
+<Box mt="20px" border="1px solid green"><Heading className="project-tech-stack"  color="green.200" as="h6" fontSize={['0.8em', '0.8em', '0.8em', '1em', '0.9em', '0.9em']}>React,ChakraUI<br></br>JavaScript,HTML,CSS</Heading></Box></Box>
+<Box  margin="auto" width="95%"   mt="10px"   justifyContent="space-between" display="flex"><Box width="70%"><FaHandPointRight size="25px"/></Box><Box width="30%" justifyContent="space-between" display="flex">
+<Box transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}><Link className="project-deployed-link" to="https://shineu.netlify.app/"><BsBrowserChrome  size="25px" /></Link></Box>
+<Box  transition= "transform 0.3s ease-in-out" _hover={{transform:"scale(1.3)"}}>
+<Link className="project-github-link" to="https://github.com/sonuparjapat/salty-face-9626"><FaGithub size="25px"/></Link>
+</Box>
+</Box>
+
+</Box>
+
+</Box>
+
+</Box>
+
 <Box></Box>
 
 
 
    </Box>
    </Box>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cumque vel nemo. Assumenda, id a.</p>
+
     </Box>
   )
 }
