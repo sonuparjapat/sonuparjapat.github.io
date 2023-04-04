@@ -1,0 +1,35 @@
+.box3:hover{
+    transform:translateY(-5px);
+    box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);}
+  
+  .box3{
+
+transition: all ease 0.2s;
+
+
+box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);
+  }
+  @keyframes move-left-to-right {
+   
+    from {
+      transform: translateX(-25%);
+    }
+    to {
+      transform: translateX(25%);
+    }
+  }
+  
+  /* Apply the animation to the box */
+  .box {
+    overflow:hidden;
+overflow-y: hidden;
+overflow-inline: hidden;
+
+    animation: move-left-to-right 18s ease-in-out infinite alternate;
+  }
+  .box4 {
+      
+
+    animation: move-left-to-right 60s ease-in-out infinite alternate;
+  }
+  

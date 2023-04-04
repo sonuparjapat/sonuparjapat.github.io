@@ -19,6 +19,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import Home from './Home';
+import Github from './Github';
 import About from './About';
 // import styles from "../App.css"
 import {Link as RCTLINK} from "react-scroll"
@@ -63,7 +64,7 @@ export default function Navbar() {
     {/* <div style={{position:"sticky",top:"2px"}}> */}
       <Box 
       color={isDark?"white":"black"}
-       position={"sticky"} top="0.1px" id="nav-menu"
+       position={"sticky"}   top="0.1px" id="nav-menu"
     
       width={"100%"}
        bg={useColorModeValue('#77bbad',"#557A95" )}
@@ -129,6 +130,7 @@ export default function Navbar() {
 <Skills />
 <Projects open={isDark}/>
 
+<Github open={isDark}/>
     <Contact open={isDark}/>
     </>
   );
