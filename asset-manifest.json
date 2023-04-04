@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9eb9e559.css",
-    "main.js": "/static/js/main.9ec44e4f.js",
+    "main.js": "/static/js/main.58e3828a.js",
     "static/media/banner.jpg": "/static/media/banner.2541860e721025109460.jpg",
     "static/media/logo.jpg": "/static/media/logo.4abfa64514f3f350692e.jpg",
     "static/media/hii2.gif": "/static/media/hii2.0efe87f53f1d4357f340.gif",
@@ -19,10 +19,10 @@
     "static/media/4.JPG": "/static/media/4.fa8863f4e1db6c2c9551.JPG",
     "index.html": "/index.html",
     "main.9eb9e559.css.map": "/static/css/main.9eb9e559.css.map",
-    "main.9ec44e4f.js.map": "/static/js/main.9ec44e4f.js.map"
+    "main.58e3828a.js.map": "/static/js/main.58e3828a.js.map"
   },
   "entrypoints": [
     "static/css/main.9eb9e559.css",
-    "static/js/main.9ec44e4f.js"
+    "static/js/main.58e3828a.js"
   ]
 }
