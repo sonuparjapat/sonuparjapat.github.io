@@ -21,23 +21,23 @@ export default function Github() {
   </Box></Box></Box>
  
   <Box textAlign="center" gridGap="45px" display="grid" gridTemplateColumns={['repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(3,1fr)', 'repeat(3,1fr)']}   margin="auto" width="80%"  mt="30px" className={styles.box3} >
-  <Box mt="5px"  width="100%"  id="github-stats-card" >
+  <Box mt="5px"  width="100%"   >
  <span  style={{marginLeft:"10px",fontWeight:"light",fontSize:"20px"}}>
       Github <span style={{fontWeight:"light",color:"rgb(0,255,162)"}}> Stats</span></span>
-  <Box marginTop="0px"  height={{sm:"200px",md:'200px',lg:"200px",xl:"150px"}} ><Image width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}}  src="https://github-readme-stats.vercel.app/api?username=sonuparjapat&theme=dark&hide_border=false&include_all_commits=false&count_private=false"/>
+  <Box marginTop="0px"  height={{sm:"200px",md:'200px',lg:"200px",xl:"150px"}} ><Image id="github-stats-card" width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}}  src="https://github-readme-stats.vercel.app/api?username=sonuparjapat&theme=dark&hide_border=false&include_all_commits=false&count_private=false"/>
   </Box></Box>
-  <Box mt="5px"  width="100%"  id="github-streak-stats" >
+  <Box mt="5px"  width="100%"   >
  <span  style={{marginLeft:"10px",fontWeight:"light",fontSize:"20px"}}>
       Github <span style={{fontWeight:"light",color:"rgb(0,255,162)"}}>Streaks</span></span>
-  <Box  marginTop="0px" height={{sm:"200px",md:'200px',lg:"200px",xl:"150px"}} ><Image width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}} src="https://github-readme-streak-stats.herokuapp.com/?user=sonuparjapat&theme=dark&hide_border=false"/>
+  <Box  marginTop="0px" height={{sm:"200px",md:'200px',lg:"200px",xl:"150px"}} ><Image  id="github-streak-stats" width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}} src="https://github-readme-streak-stats.herokuapp.com/?user=sonuparjapat&theme=dark&hide_border=false"/>
   </Box></Box>
-  <Box mt="5px" width="100%"   id="github-top-langs" >
+  <Box mt="5px" width="100%"  >
  <span  style={{fontWeight:"light",fontSize:"20px"}}>
       Github <span style={{fontWeight:"light",color:"rgb(0,255,162)"}}>Languages</span></span>
   <Box  marginTop="0px" height={{sm:"200px",md:'200px',lg:"200px",xl:"150px"}}>
     
     
-    <Image width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}}  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonuparjapat&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/>
+    <Image  id="github-top-langs"  width="100%" height={{sm:"100%",md:'100%',lg:"100%px",xl:"100%"}}  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonuparjapat&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/>
   </Box></Box>
   
   

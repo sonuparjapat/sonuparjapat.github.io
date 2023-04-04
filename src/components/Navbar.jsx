@@ -98,7 +98,7 @@ export default function Navbar() {
             </Menu>
           </Flex>
       
-          <IconButton size={"5px"}  display={{base:"inline",md:"inline",lg:"inline",xl:"inline","2xl":"inline"}} ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
+          <IconButton size={"5px"}  display={{base:"inline",md:"inline",lg:"inline",xl:"inline","2xl":"inline"}}  icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
             <HStack
             justifyContent={"space-around"}
             className={styles.add}
@@ -117,7 +117,8 @@ export default function Navbar() {
                 offset={-70}
                 duration={500} to={link.id}  className={link.class}  hover={{color:"red"}} key={link.a}><Link fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}}_hover={{color:"teal"}}>{link.a}</Link></RCTLINK>
               ))}
-              <Link className='nav-link resume' paddingTop="2px" fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} _hover={{bg:"teal"}} href="https://drive.google.com/file/d/1YiL0dE-iwYx6TZDwH4NK57XBG0L9_RMr/view?usp=share_link">Resume</Link>
+             <Link className='nav-link resume' paddingTop="2px"  _hover={{bg:"teal"}} href="https://drive.google.com/file/d/1YiL0dE-iwYx6TZDwH4NK57XBG0L9_RMr/view?usp=share_link"> <Button width={["0.1sem","2em","4em","4em","4em"]} fontSize={{base:"10px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} id="resume-button-2"
+>Resume</Button></Link>
             </HStack>
 
          
