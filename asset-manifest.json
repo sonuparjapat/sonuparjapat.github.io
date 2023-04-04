@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.6af4f92b.css",
-    "main.js": "/static/js/main.c35e8c23.js",
+    "main.css": "/static/css/main.9eb9e559.css",
+    "main.js": "/static/js/main.dcdd3612.js",
     "static/media/banner.jpg": "/static/media/banner.2541860e721025109460.jpg",
     "static/media/logo.jpg": "/static/media/logo.4abfa64514f3f350692e.jpg",
     "static/media/hii2.gif": "/static/media/hii2.0efe87f53f1d4357f340.gif",
+    "static/media/shine2.JPG": "/static/media/shine2.b79847a148d9bc016294.JPG",
     "static/media/shineu.jpg": "/static/media/shineu.566c453192721f94f8ba.jpg",
     "static/media/happshop.jpg": "/static/media/happshop.0149bb05a814880ec150.jpg",
+    "static/media/happy2.JPG": "/static/media/happy2.b26f739cbf99177c2280.JPG",
     "static/media/smartcart.jpg": "/static/media/smartcart.b5a9c5807489c5b40381.jpg",
+    "static/media/smartcart2.JPG": "/static/media/smartcart2.ac210af40ef8a295b6ae.JPG",
+    "static/media/3.JPG": "/static/media/3.ead61dc01c172646b3bb.JPG",
+    "static/media/2.JPG": "/static/media/2.3eed2f71472a3b5732a8.JPG",
     "static/media/hiiimg.gif": "/static/media/hiiimg.10047db24eff3d3ed50a.gif",
     "static/media/foolocker.jpg": "/static/media/foolocker.2940596c65726994cfe6.jpg",
     "static/media/about.gif": "/static/media/about.c47d9404e8421e75b94b.gif",
+    "static/media/4.JPG": "/static/media/4.fa8863f4e1db6c2c9551.JPG",
     "index.html": "/index.html",
-    "main.6af4f92b.css.map": "/static/css/main.6af4f92b.css.map",
-    "main.c35e8c23.js.map": "/static/js/main.c35e8c23.js.map"
+    "main.9eb9e559.css.map": "/static/css/main.9eb9e559.css.map",
+    "main.dcdd3612.js.map": "/static/js/main.dcdd3612.js.map"
   },
   "entrypoints": [
-    "static/css/main.6af4f92b.css",
-    "static/js/main.c35e8c23.js"
+    "static/css/main.9eb9e559.css",
+    "static/js/main.dcdd3612.js"
   ]
 }
