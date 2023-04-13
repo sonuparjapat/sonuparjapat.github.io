@@ -1,5 +1,5 @@
-import { Avatar, Box, Heading,Image } from '@chakra-ui/react'
-
+import { Avatar, Box, Heading,Image,Button } from '@chakra-ui/react'
+import cv from "../components/resume/Sonu_Resume.pdf"
 import styles from "./About.module.css"
 import AllRoutes from "./AllRoutes";
 // import Navbar from "./Navbar";
@@ -48,6 +48,8 @@ When I sit down to code, I often lose track of time and keep going well into the
 
 <Box  className={styles.box5} textAlign={"center"}  border={"1px solid gray"}><Heading fontWeight={"light"}
 style={{marginTop:"16px" ,fontSize:"13px",color:open?"gray.400":"white"}}> Attempted 100+ <br></br>hours of soft <br></br>skill sessions</Heading></Box>
+{/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
+<a mt="0px" href={cv} download ><Button  id="resume-button-2" >RESUME</Button></a>
 </Box>
 </Box>
 

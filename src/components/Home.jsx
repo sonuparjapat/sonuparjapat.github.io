@@ -1,6 +1,7 @@
 import { Avatar, Box,Flex,Heading,Stack} from '@chakra-ui/react'
 import { FaGithub, FaHeart, FaLinkedin, FaLinkedinIn, FaRegHeart, FaTwitter } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
+
 import cv from "../components/resume/Sonu_Resume.pdf"
 import { Image } from '@chakra-ui/react'
 import React from 'react'
