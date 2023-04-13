@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react'
+import cv from "../components/resume/Sonu_Resume.pdf"
 import React from 'react'
 import {Link} from "react-router-dom"
 import styles from "./Contact.module.css"
@@ -42,7 +43,7 @@ export default function Contact() {
 <Link id="contact-github" to="https://github.com/sonuparjapat" ><BsGithub style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
 <Link to="https://twitter.com/Sahilsi43803152" ><BsTwitter style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
 <Link id="contact-linkedin" to="https://www.linkedin.com/in/sonu-parjapat-a1a466196/" ><FaLinkedin style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
-<Link to="https://drive.google.com/file/d/1YiL0dE-iwYx6TZDwH4NK57XBG0L9_RMr/view"  id="resume-link-1"><Button>RESUME</Button></Link>
+<a href={cv} download ><Button>RESUME</Button></a>
 
 
  

@@ -1,6 +1,7 @@
 import { Avatar, Box,Flex,Heading,Stack} from '@chakra-ui/react'
 import { FaGithub, FaHeart, FaLinkedin, FaLinkedinIn, FaRegHeart, FaTwitter } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
+import cv from "../components/resume/Sonu_Resume.pdf"
 import { Image } from '@chakra-ui/react'
 import React from 'react'
 import { useDisclosure } from '@chakra-ui/react'
@@ -9,7 +10,7 @@ import banner from "./images/banner.jpg"
 import styles from "../components/Navbar.module.css"
 import helloimage from "../components/images/hii2.gif"
 import myimg from "./images/logo.jpg"
-import { Link } from '@chakra-ui/react'
+import { Link ,Button} from '@chakra-ui/react'
 import hiiimg from "./images/hiiimg.gif"
 // import { color } from 'framer-motion'
 export default function Home({open}) {
@@ -43,13 +44,14 @@ className={styles.box2}
  >
 As a MERN stack developer, I have expertise in building full-stack web <br></br> applications using MongoDB, Express.js, React.js, and Node.js.
 My skills in MERN stack development enable me to build responsive user interfaces and implement complex functionalities while ensuring optimal performance and security. </Heading>
-<Box mt={['0.5em', '0.5em', '1em', '1em', '2.0em', '2.0em']}  marginLeft={['1.3em', '1.3em', '3em', '3em', '3.0em', '3.0em']}  width={['5em', '8em', '8em', '8em', '8.0em', '8.0em']} justifyContent={"space-between"} display={"flex"}>
-
-<Link href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/"><FaLinkedin size={"20px"}/></Link>
-<Link href="https://twitter.com/Sahilsi43803152"><FaTwitter  size="20px"/></Link>
-<Link to="https://github.com/sonuparjapat"><FaGithub size="20px"/></Link>
-
-
+<Box  mt={['0.4em', '0.5em', '1em', '1em', '2.0em', '2.0em']}  marginLeft={['1.3em', '1.3em', '3em', '3em', '3.0em', '3.0em']}  width="50%" justifyContent={"space-between"} display={"flex"}>
+<Box  display="flex" gap="20px">
+  <Box display="flex" gap="19px">
+<Link mt="6.5px" href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/"><FaLinkedin size={"20px"}/></Link>
+<Link  mt="6.5px" href="https://twitter.com/Sahilsi43803152"><FaTwitter  size="20px"/></Link>
+<Link  mt="6.5px" to="https://github.com/sonuparjapat"><FaGithub size="20px"/></Link></Box>
+<Box><a mt="0px" href={cv} download ><Button  id="resume-button-2" >RESUME</Button></a></Box>
+</Box>
 </Box>
 </Box> 
 <Box className={styles.gif}>

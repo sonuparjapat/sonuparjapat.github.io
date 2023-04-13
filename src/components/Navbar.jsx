@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import cv from "../components/resume/Sonu_Resume.pdf"
 import {
   Box,
   Flex,
@@ -117,8 +118,8 @@ export default function Navbar() {
                 offset={-70}
                 duration={500} to={link.id}  className={link.class}  hover={{color:"red"}} key={link.a}><Link fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}}_hover={{color:"teal"}}>{link.a}</Link></RCTLINK>
               ))}
-             <Link className='nav-link resume' paddingTop="2px"  _hover={{bg:"teal"}} href="https://drive.google.com/file/d/1YiL0dE-iwYx6TZDwH4NK57XBG0L9_RMr/view?usp=share_link"> <Button width={["0.1sem","2em","4em","4em","4em"]} fontSize={{base:"10px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} id="resume-button-2"
->Resume</Button></Link>
+             <a className='nav-link resume' paddingTop="2px"  _hover={{bg:"teal"}} href={cv} download> <Button width={["0.1em","2em","4em","4em","4em"]} fontSize={{base:"10px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} id="resume-button-1"
+>Resume</Button></a>
             </HStack>
 
          
