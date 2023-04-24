@@ -17,7 +17,9 @@ import hiiimg from "./images/hiiimg.gif"
 export default function Home({open}) {
 
   console.log(open)
-
+const handleclick=()=>{
+  window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+}
   return (
     <>
 
@@ -43,15 +45,18 @@ className={styles.box2}
 <Heading   id="user-detail-intro"
  color={"gray.400"} marginLeft={['1.5em', '1.5em', '3.3em', '3.3em', '3.3em', '3.3em']} mt={"15px"} fontFamily={"sans-serif"} as="h6" fontSize="15px"
  >
-As a MERN stack developer, I have expertise in building full-stack web <br></br> applications using MongoDB, Express.js, React.js, and Node.js.
-My skills in MERN stack development enable me to build responsive user interfaces and implement complex functionalities while ensuring optimal performance and security. </Heading>
+A MERN stack developer, who possesses a strong understanding of the technologies involved in building web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js).Skilled in writing clean, maintainable,and scalable code. </Heading>
 <Box  mt={['0.4em', '0.5em', '1em', '1em', '2.0em', '2.0em']}  marginLeft={['1.3em', '1.3em', '3em', '3em', '3.0em', '3.0em']}  width="50%" justifyContent={"space-between"} display={"flex"}>
 <Box  display="flex" gap="20px">
   <Box display="flex" gap="19px">
 <Link mt="6.5px" href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/"><FaLinkedin size={"20px"}/></Link>
 <Link  mt="6.5px" href="https://twitter.com/Sahilsi43803152"><FaTwitter  size="20px"/></Link>
 <Link  mt="6.5px" to="https://github.com/sonuparjapat"><FaGithub size="20px"/></Link></Box>
-<Box><a mt="0px" href={cv} download ><Button  id="resume-button-2" >RESUME</Button></a></Box>
+<Box><Button onClick={handleclick} id="resume-button-2" >
+  <a  target="_blank" mt="0px" id="resume-link-2"  href={`${cv}`} download={cv}   >RESUME
+  </a></Button>
+ 
+  </Box>
 </Box>
 </Box>
 </Box> 

@@ -14,6 +14,9 @@ export default function Contact() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
+  const handleclick=()=>{
+    window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+  }
   return (
 <Box   mt="30px"  bg={isDark?"#2d3748":"white"} id="contact">
 <Box display="flex" margin="auto" width={['95%', '80%', '70%', '50%', '40%', '40%']} textAlign="center"     >
@@ -43,7 +46,7 @@ export default function Contact() {
 <Link id="contact-github" to="https://github.com/sonuparjapat" ><BsGithub style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
 <Link to="https://twitter.com/Sahilsi43803152" ><BsTwitter style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
 <Link id="contact-linkedin" to="https://www.linkedin.com/in/sonu-parjapat-a1a466196/" ><FaLinkedin style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
-<a href={cv} download ><Button>RESUME</Button></a>
+<a href={cv} download ><Button onClick={handleclick}>RESUME</Button></a>
 
 
  

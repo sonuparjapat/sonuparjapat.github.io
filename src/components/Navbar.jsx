@@ -59,7 +59,9 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   // console.log(isOpen)
-
+  const handleclick=()=>{
+    window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+  }
   return (
     <>
     {/* <div style={{position:"sticky",top:"2px"}}> */}
@@ -118,7 +120,7 @@ export default function Navbar() {
                 offset={-70}
                 duration={500} to={link.id}  className={link.class}  hover={{color:"red"}} key={link.a}><Link fontSize={{base:"12px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}}_hover={{color:"teal"}}>{link.a}</Link></RCTLINK>
               ))}
-             <a className='nav-link resume' paddingTop="2px"  _hover={{bg:"teal"}} href={cv} download> <Button width={["0.1em","2em","4em","4em","4em"]} fontSize={{base:"10px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} id="resume-button-1"
+             <a className='nav-link resume' paddingTop="2px"  _hover={{bg:"teal"}} href={cv} download> <Button onClick={handleclick} width={["0.1em","2em","4em","4em","4em"]} fontSize={{base:"10px",md:"15px",lg:"15px",xl:"15px","2xl":"15px"}} id="resume-button-1"
 >Resume</Button></a>
             </HStack>
 
