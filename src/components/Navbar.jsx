@@ -40,18 +40,7 @@ const Links = [{ id:"home",a:"Home",class:"nav-link home"},{id:"about",a:'About'
 {id:"skills",a:"Skills",class:"nav-link skills"},{id:"projects",a:'Projects',class:"nav-link projects"},
  {id:"contact",a:'Contact',class:"nav-link contact"}];
 
-// const NavLink = ({ children }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={'md'}
-//     _hover={{
-//       textDecoration: 'none',
-//       bg: useColorModeValue('gray.200', 'gray.700'),
-//     }}
-//   >
-//     {children}
-//   </Link>
+
 
 
 export default function Navbar() {
