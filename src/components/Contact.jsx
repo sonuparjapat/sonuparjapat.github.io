@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import cv from "../components/resume/Sonu_Resume.pdf"
+import cv from "../components/resume/Sonu-Resume.pdf"
 import React from 'react'
 import {Link} from "react-router-dom"
 import styles from "./Contact.module.css"
@@ -15,7 +15,7 @@ export default function Contact() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const handleclick=()=>{
-    window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/105fE_qQa520vtTCgPx-qGTd2RmNE5lqL/view?usp=share_link")
   }
   return (
 <Box   mt="30px"  bg={isDark?"#2d3748":"white"} id="contact">

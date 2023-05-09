@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import cv from "../components/resume/Sonu_Resume.pdf"
+import cv from "../components/resume/Sonu-Resume.pdf"
 import {
   Box,
   Flex,
@@ -60,14 +60,15 @@ export default function Navbar() {
   const isDark = colorMode === "dark";
   // console.log(isOpen)
   const handleclick=()=>{
-    window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/105fE_qQa520vtTCgPx-qGTd2RmNE5lqL/view?usp=share_link")
   }
   return (
     <>
     {/* <div style={{position:"sticky",top:"2px"}}> */}
       <Box 
+    
       color={isDark?"white":"black"}
-       position={"sticky"}   top="0.1px" id="nav-menu"
+       position={"sticky"}   top="0.1px"   zIndex={'overlay'} id="nav-menu"
     
       width={"100%"}
        bg={useColorModeValue('#77bbad',"#557A95" )}

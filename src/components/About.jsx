@@ -1,5 +1,5 @@
 import { Avatar, Box, Heading,Image,Button } from '@chakra-ui/react'
-import cv from "../components/resume/Sonu_Resume.pdf"
+import cv from "../components/resume/Sonu-Resume.pdf"
 import styles from "./About.module.css"
 import AllRoutes from "./AllRoutes";
 // import Navbar from "./Navbar";

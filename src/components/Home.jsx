@@ -2,7 +2,7 @@ import { Avatar, Box,Flex,Heading,Stack} from '@chakra-ui/react'
 import { FaGithub, FaHeart, FaLinkedin, FaLinkedinIn, FaRegHeart, FaTwitter } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
 
-import cv from "../components/resume/Sonu_Resume.pdf"
+import cv from "../components/resume/Sonu-Resume.pdf"
 import { Image } from '@chakra-ui/react'
 import React from 'react'
 import { useDisclosure } from '@chakra-ui/react'
@@ -15,10 +15,12 @@ import { Link ,Button} from '@chakra-ui/react'
 import hiiimg from "./images/hiiimg.gif"
 // import { color } from 'framer-motion'
 export default function Home({open}) {
-
+  const HandleClick = () => {
+    window.open('https://drive.google.com/file/d/105fE_qQa520vtTCgPx-qGTd2RmNE5lqL/view?usp=share_link')
+  }
   console.log(open)
 const handleclick=()=>{
-  window.open("https://drive.google.com/file/d/18eyJH_3LNjBZZZPNP_sACpWkNDz1N6V6/view?usp=share_link")
+  window.open("https://drive.google.com/drive/u/0/folders/1t1ILKuKnikuFK3BDL-wtadyiTrHD22-z")
 }
   return (
     <>
@@ -52,9 +54,10 @@ A MERN stack developer, who possesses a strong understanding of the technologies
 <Link mt="6.5px" href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/"><FaLinkedin size={"20px"}/></Link>
 <Link  mt="6.5px" href="https://twitter.com/Sahilsi43803152"><FaTwitter  size="20px"/></Link>
 <Link  mt="6.5px" to="https://github.com/sonuparjapat"><FaGithub size="20px"/></Link></Box>
-<Box><Button onClick={handleclick} id="resume-button-2" >
-  <a  target="_blank" mt="0px" id="resume-link-2"  href={`${cv}`} download={cv}   >RESUME
-  </a></Button>
+<Box>
+<button id="resume-button-2" onClick={HandleClick}><a id="resume-link-2" href={cv} download>My resume</a></button>
+
+
  
   </Box>
 </Box>
@@ -74,7 +77,10 @@ rounded="xl"
 >
 <Image
 className="home-img"
+width="100%"
               rounded={'xl'}
+          
+           
               height={['20.2em', '20.2em', '20.2em', '26.2em', '26.2em', '26.2em']}
               // width={['26.2em', '26.2em', '26.2em', '26.2em', '26.2em', '10.0em']}
               objectFit={'cover'}
