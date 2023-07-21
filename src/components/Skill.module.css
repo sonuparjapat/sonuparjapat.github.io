@@ -14,11 +14,22 @@ box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);
     box-shadow: 0px 5px 10px 0px rgba(224, 56, 5, 0.7);}
   
   #box4{
-width:80%;
+width:100%;
 /* transition: all ease 0.2s; */
 transition: transform 0.7s ease-in-out;
 
 box-shadow: 0px 5px 10px 0px rgba(255, 51, 0, 0.7);
   }
 
- 
+  .move {
+    position: relative;
+    animation: move 4s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    0% { left: 0; }
+    25% { left: -5px; }
+    50% { left: 0; }
+    75% { left: 5px; }
+    100% { left: 0; }
+  }

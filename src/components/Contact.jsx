@@ -15,7 +15,7 @@ export default function Contact() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const handleclick=()=>{
-    window.open("https://drive.google.com/file/d/105fE_qQa520vtTCgPx-qGTd2RmNE5lqL/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/14ZYIjSF_WAFUTsK9MFombf4hkJdxySsl/view")
   }
   return (
 <Box   mt="30px"  bg={isDark?"#2d3748":"white"} id="contact">
@@ -43,10 +43,10 @@ export default function Contact() {
 <Box>
 <Box mt="20px" gap="20px" display="flex">
 
-<Link id="contact-github" to="https://github.com/sonuparjapat" ><BsGithub style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
-<Link to="https://twitter.com/Sahilsi43803152" ><BsTwitter style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
-<Link id="contact-linkedin" to="https://www.linkedin.com/in/sonu-parjapat-a1a466196/" ><FaLinkedin style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
-<a href={cv} download ><Button onClick={handleclick}>RESUME</Button></a>
+<a id="contact-github" href="https://github.com/sonuparjapat" target='_blank' ><BsGithub style={{color:"pink",fontSize:"30px",display:"inline"}}/></a>
+<Link to="https://twitter.com/Sahilsi43803152" target='_blank' ><BsTwitter style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
+<Link id="contact-linkedin" to="https://www.linkedin.com/in/sonu-parjapat-a1a466196/" target='_blank' ><FaLinkedin style={{color:"pink",fontSize:"30px",display:"inline"}}/></Link>
+<a href={cv} download target='_blank' ><Button onClick={handleclick}>RESUME</Button></a>
 
 
  

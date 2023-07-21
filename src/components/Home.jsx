@@ -16,7 +16,7 @@ import hiiimg from "./images/hiiimg.gif"
 // import { color } from 'framer-motion'
 export default function Home({open}) {
   const HandleClick = () => {
-    window.open('https://drive.google.com/file/d/105fE_qQa520vtTCgPx-qGTd2RmNE5lqL/view?usp=share_link')
+    window.open('https://drive.google.com/file/d/14ZYIjSF_WAFUTsK9MFombf4hkJdxySsl/view')
   }
   console.log(open)
 const handleclick=()=>{
@@ -51,11 +51,11 @@ A MERN stack developer, who possesses a strong understanding of the technologies
 <Box  mt={['0.4em', '0.5em', '1em', '1em', '2.0em', '2.0em']}  marginLeft={['1.3em', '1.3em', '3em', '3em', '3.0em', '3.0em']}  width="50%" justifyContent={"space-between"} display={"flex"}>
 <Box  display="flex" gap="20px">
   <Box display="flex" gap="19px">
-<Link mt="6.5px" href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/"><FaLinkedin size={"20px"}/></Link>
-<Link  mt="6.5px" href="https://twitter.com/Sahilsi43803152"><FaTwitter  size="20px"/></Link>
-<Link  mt="6.5px" to="https://github.com/sonuparjapat"><FaGithub size="20px"/></Link></Box>
+<Link mt="6.5px" href="https://www.linkedin.com/in/sonu-parjapat-a1a466196/" target='_blank' ><FaLinkedin size={"20px"}/></Link>
+<Link  mt="6.5px" href="https://twitter.com/Sahilsi43803152" target='_blank' ><FaTwitter  size="20px"/></Link>
+<Link  mt="6.5px" href="https://github.com/sonuparjapat" target='_blank' ><FaGithub size="20px"/></Link></Box>
 <Box>
-<button id="resume-button-2" onClick={HandleClick}><a id="resume-link-2" href={cv} download>My resume</a></button>
+<Button _hover={{"backgroundColor":"teal.300"}}  id="resume-button-2" onClick={HandleClick} target='_blank' ><a id="resume-link-2" href={cv} target='_blank'  download>Resume</a></Button>
 
 
  
@@ -66,7 +66,8 @@ A MERN stack developer, who possesses a strong understanding of the technologies
 <Box className={styles.gif}>
   <Image src={hiiimg}/>
 </Box>
- <Box   
+ <Box 
+ id={styles.move}  
 className={styles.box1}
 rounded="xl"
 // border="1px solid red"
@@ -79,7 +80,7 @@ rounded="xl"
 className="home-img"
 width="100%"
               rounded={'xl'}
-          
+           
            
               height={['20.2em', '20.2em', '20.2em', '26.2em', '26.2em', '26.2em']}
               // width={['26.2em', '26.2em', '26.2em', '26.2em', '26.2em', '10.0em']}

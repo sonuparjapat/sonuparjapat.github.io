@@ -7,10 +7,12 @@ import HomeSection from './About'
 import Navbar from './Navbar'
 import Projects from './Projects'
 import Skills from './Skills'
+import Navbar2 from "./Navbar2"
 export default function AllRoutes() {
   return (
     <div>
-    
+      <Navbar2/>
+{/* <Navbar/> */}
      <Routes>
         {/* <Route path="/" element={<Home/>}></Route> */}
         <Route path="/about" element={<About/>}></Route>

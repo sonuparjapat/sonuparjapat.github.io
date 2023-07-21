@@ -8,7 +8,7 @@ ReactDOM.render(
  
     <ChakraProvider>
       <BrowserRouter>
-      <ColorModeScript initialColorMode="light" bg="white"></ColorModeScript>
+      <ColorModeScript initialColorMode="teal.600" bg="teal.600"></ColorModeScript>
       <App />
       </BrowserRouter>
     </ChakraProvider>,
