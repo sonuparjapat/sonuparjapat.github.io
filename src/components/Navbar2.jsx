@@ -58,12 +58,15 @@ import {
       }
     return (
         <>
-      <Box   color={isDark?"white":"black"}
-      position={"sticky"}   top="0.1px"   zIndex={'overlay'} id="nav-menu"
+      <Box 
+       id="nav-menu"
+      color={isDark?"white":"black"}
+      position={"sticky"}   top="0.1px"   zIndex={'overlay'} 
    
      width={"100%"}
       bg={useColorModeValue('#77bbad',"#557A95" )}>
         <Flex
+       
           bg={useColorModeValue('#77bbad', "#557A95")}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
